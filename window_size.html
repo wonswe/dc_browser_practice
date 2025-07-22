@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Size</title>
+  </head>
+  <style>
+    body {background-color: powderblue;}
+    .container {
+        background-color: darkslateblue;
+        display: inline-block;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <p id="screen"></p>
+      <p id="outer"></p>
+      <p id="inner"></p>
+      <p id="clientWidth"></p>
+    </div>
+
+    <script>
+      const screen = document.getElementById("screen");
+      const outer = document.getElementById("outer");
+      const inner = document.getElementById("inner");
+      const clientWidth = document.getElementById("clientWidth");
+    </script>
+  </body>
+</html>
