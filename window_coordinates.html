@@ -8,9 +8,16 @@
       body {
         background-color: black;
         /* overflow: hidden; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: space-between; */
       }
 
-      div {
+      .boxes {
+        background-color: blue;
+      }
+
+      .box {
         width: 250px;
         height: 250px;
         background-color: blanchedalmond;
@@ -21,19 +28,34 @@
       .special {
         background-color: lightsalmon;
       }
+
+      .buttons {
+        width: 500px;
+        
+        background-color: red;
+      }
     </style>
   </head>
   <body>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div class="special"></div>
-    <div></div>
-    <div></div>
+    <div class="boxes">
+      <div class="box"></div∂>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box special"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+    </div>
+
+    <div class="buttons">
+      <button>Scroll by 100px(y)</button>
+      <button>Scroll to 100px(y)</button>
+      <button>Scroll into special</button>
+    </div>
+
     <script>
       // DOMRECT {x: 12, y: 519, width: 250, height: 250, top: 0, ...}
       // client: 154, 653
