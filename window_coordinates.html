@@ -7,14 +7,6 @@
     <style>
       body {
         background-color: black;
-        /* overflow: hidden; */
-        /* display: flex; */
-        /* flex-direction: column; */
-        /* justify-content: space-between; */
-      }
-
-      .boxes {
-        background-color: blue;
       }
 
       .box {
@@ -29,32 +21,31 @@
         background-color: lightsalmon;
       }
 
-      .buttons {
-        width: 500px;
-        
-        background-color: red;
+      aside {
+        position: fixed;
+        top: 20px;
+        right: 20px;
       }
+
     </style>
   </head>
   <body>
-    <div class="boxes">
-      <div class="box"></div∂>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box special"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-    </div>
 
-    <div class="buttons">
-      <button>Scroll by 100px(y)</button>
-      <button>Scroll to 100px(y)</button>
-      <button>Scroll into special</button>
-    </div>
+    <div class="box"></div∂>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box special"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <aside>
+      <button class="scroll-by">Scroll by 100px(y)</button>
+      <button class="scroll-to">Scroll to 100px(y)</button>
+      <button class="scroll-into">Scroll into special</button>
+    </aside>
 
     <script>
       // DOMRECT {x: 12, y: 519, width: 250, height: 250, top: 0, ...}
@@ -70,6 +61,8 @@
         console.log(`client: ${event.clientX}, ${event.clientY}`);
         console.log(`page: ${event.pageX}, ${event.pageY}`);
       });
+
+      
     </script>
   </body>
 </html>
