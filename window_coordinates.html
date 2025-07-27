@@ -67,10 +67,26 @@
       const scrollInto = document.querySelector('.scroll-into');
 
       scrollBy.addEventListener('click', (event) => {
-        
+        window.scrollBy({
+          top: 100,
+          left:0,
+          behavior: "smooth"
+        });
       })
 
-      const test = 0;
+      scrollTo.addEventListener('click', (event) => {
+        window.scrollTo({
+          top: 100,
+          left:0,
+          behavior: "smooth"
+        })
+      })
+
+      scrollInto.addEventListener('click', (event) => {
+        special.scrollIntoView({
+          behavior: "smooth"
+        });
+      })
     </script>
   </body>
 </html>
