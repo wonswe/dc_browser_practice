@@ -4,19 +4,33 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <script src="test.js" defer></script>
+    <!-- defer: document가 전부 parsing 되기 전에 먼저 -->
   </head>
   <body>
     <script>
 
-      // only document
-      window.addEventListener('DOMContentLoaded', () => {
-          console.log('load');
-      })
+        // only document
+        window.addEventListener('DOMContentLoaded', () => {
+            console.log('DOMContentLoaded');
+            // html만 완료가 되면 호출
+        });
 
-      // after resources (css, images)
-      window.addEventListener('load', () => {
-          console.log('load');
-      })
+        // after resources (css, images)
+        window.addEventListener('load', () => {
+            console.log('load');
+            // 모든 리소스가 로딩이 된 후 이벤트 발생, 조금 나중에 다 준비가 되면 불러짐
+        });
+
+
+          // before unload
+          window.addEventListener('beforeunload', () => {
+            console.log('beforeunload');
+        });
+      // resource is being unloaded
+      //     window.addEventListener('unload', () => {
+      //       console.log('unload');
+      //   });
     </script>
   </body>
 </html>
