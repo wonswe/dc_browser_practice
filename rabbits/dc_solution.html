@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>토끼를 찾아라!</title>
+    <style>
+      body {
+        background-color: black;
+        color: white;
+      }
+
+      button {
+        font-size: 25px;
+      }
+
+      .container {
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+      }
+
+      img {
+        width: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button>Find a rabbit 🐇</button>
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="rabbit" src="img/rabbit.png" alt="rabbit" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+      <img class="carrot" src="img/carrot.png" alt="carrot" />
+    </div>
+    <script>
+      const rabbit = document.querySelector('.rabbit');
+      const button = document.querySelector('button');
+
+      button.addEventListener('click', function() {
+        rabbit.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      })
+    </script>
+  </body>
+</html>
