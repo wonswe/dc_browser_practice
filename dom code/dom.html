@@ -35,18 +35,22 @@
   <body>
     <section>
       <img src="img/avatar.png" alt="avatar" />
+      <img src="img/people.png" alt="avatar" />
       <h1 id="brand">Dream Coding</h1>
       <!-- Hello Comment -->
       <h3>Don't forget to code your dream</h3>
     </section>
     <span>Hello World!</span>
     <script>
-      const image = document.querySelector('img');
-      // querySelector() returns the first Element within the document that
-      // matches the specified selector, or group of selectors.
+      // const image = document.querySelector('img');
+      // // querySelector() returns the first Element within the document that
+      // // matches the specified selector, or group of selectors.
+      // console.log(image);
+      // const brand = document.getElementById('brand');
+      // console.log(brand);
+
+      const image = document.querySelector('img[src="img/avatar.png"]');
       console.log(image);
-      const brand = document.getElementById('brand');
-      console.log(brand);
     </script>
   </body>
 </html>
