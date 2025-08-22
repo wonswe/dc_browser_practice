@@ -54,8 +54,10 @@
 
       const section = document.querySelector('section');
       const h2 = document.createElement('h2');
-      h2.setAttribute('class', 'title');
-      console.log(h2);
+      h2.setAttribute('class', 'title'); // <h2 class="title"></h2>
+      h2.textContent = 'This is a title'; // <h2 class="title">This is a title</h2>
+      section.appendChild(h2); // 새로 추가된 자식 노드 자체를 리턴, 이전 브라우저 호환.
+      section.append(h2); // 노드 리턴 x, 더 최신
     </script>
   </body>
 </html>
