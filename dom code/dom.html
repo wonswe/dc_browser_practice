@@ -57,7 +57,9 @@
       h2.setAttribute('class', 'title'); // <h2 class="title"></h2>
       h2.textContent = 'This is a title'; // <h2 class="title">This is a title</h2>
       section.appendChild(h2); // 새로 추가된 자식 노드 자체를 리턴, 이전 브라우저 호환.
-      section.append(h2); // 노드 리턴 x, 더 최신
+      // section.append(h2); // 노드 리턴 x, 더 최신
+      const h3 = document.querySelector('h3');
+      section.insertBefore(h2, h3);
     </script>
   </body>
 </html>
