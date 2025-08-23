@@ -60,6 +60,15 @@
       // section.append(h2); // 노드 리턴 x, 더 최신
       const h3 = document.querySelector('h3');
       section.insertBefore(h2, h3);
+
+      // section.innerHTML = `
+      //   <img src="img/avatar.png" alt="avatar" />
+      //   <h1 id="brand">Dream Coding Test</h1>
+      // `
+
+      // 위처럼 전체적인 html을 업데이트하는 것 보단 textContent로 직접 업데이트 하는게 좋다.
+
+      section.removeChild(h2); // This is a title <h2> 뺀다
     </script>
   </body>
 </html>
